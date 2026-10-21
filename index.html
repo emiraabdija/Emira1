@@ -24,5 +24,25 @@
             document.getElementById("rezultati").innerHTML = shuma;
         }
     </script>
+    <br>
+    <br>
+     <label>Numri i pare</label>
+    <input type="number" id="nr1">
+    <br>
+    <label>Numri i dyte</label>
+    <input type="number" id="nr2">
+    <br>
+    <button type="button" onclick="zbritja()">-</button>
+    <p id="rezultati"></p>
+
+    <script>
+        function zbritja() {
+            var a = Number(document.getElementById("nr1").value);
+            var b = Number(document.getElementById("nr2").value);
+            var ndryshimi = a - b;
+
+            document.getElementById("rezultati").innerHTML = ndryshimi;
+        }
+    </script>
 </body>
 </html>
