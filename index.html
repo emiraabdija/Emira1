@@ -61,7 +61,17 @@
             var rezultati = a / b;
 
             document.getElementById("rezultati").innerHTML = rezultati;
+            
+            if (b == 0) {
+                document.getElementById("rezultati").innerHTML =
+                    "Nuk mund te pjesetojme me zero";
+            }
+            else {
+                var rezultati = a / b;
+                document.getElementById("rezultati").innerHTML = rezultati;
+            }
         }
+        
     </script>
 </body>
 </html>
